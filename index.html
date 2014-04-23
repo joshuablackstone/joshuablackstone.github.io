@@ -132,6 +132,42 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-md-10 table-responsive">
+                <h2>
+                    Technical Skills
+                </h2>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Experience</th>
+                            <th>Strength Level</th>
+                        </tr>
+                    </thead>
+                    <tbody id="skills"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 table-responsive">
+                <h2>
+                    Professional Experience
+                </h2>
+                <h6>* Click For Details</h6>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Job Title</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="jobs"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-10">
                 <h2>Testimonials</h2>
                 <ul id="testimonials" class="list-group"></ul>
@@ -145,6 +181,7 @@
 
     <script src="/Scripts/jquery-2.0.3.min.js"></script>
     <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/bootbox.min.js"></script>
     <script src="/Scripts/toastr.min.js"></script>
     <script type="text/javascript">
         $(function () {
@@ -214,6 +251,282 @@
                 ]
             };
 
+            var skills = {
+                "skill": [
+                     {
+                         "Title": "AJAX",
+                         "Description": "",
+                         "StartDate": '01/01/2009',
+                         "EndDate": null,
+                         "Strength": 9
+                     },
+                    {
+                        "Title": "ASP.NET MVC",
+                        "Description": "(v2, 3, 4, 4.5, 4.5.1)",
+                        "StartDate": '11/01/2011',
+                        "EndDate": null,
+                        "Strength": 8
+                    },
+                    {
+                        "Title": "ASP.NET WebForms",
+                        "Description": "(v2, 3, 3.5, 4, 4.5, 4.5.1)",
+                        "StartDate": '12/01/2008',
+                        "EndDate": null,
+                        "Strength": 8
+                    },
+                    {
+                        "Title": "Bootstrap",
+                        "Description": "(v2, 3)",
+                        "StartDate": '10/01/2013',
+                        "EndDate": null,
+                        "Strength": 8
+                    },
+                    {
+                        "Title": "C#",
+                        "Description": "(C Sharp)",
+                        "StartDate": '01/01/2009',
+                        "EndDate": null,
+                        "Strength": 7
+                    },
+                    {
+                        "Title": "Classic ASP",
+                        "Description": "",
+                        "StartDate": '02/01/2008',
+                        "EndDate": '09/01/2008',
+                        "Strength": 6
+                    },
+                    {
+                        "Title": "CSS",
+                        "Description": "",
+                        "StartDate": '01/01/2003',
+                        "EndDate": null,
+                        "Strength": 9
+                    },
+                    {
+                        "Title": "JQuery",
+                        "Description": "",
+                        "StartDate": '08/01/2009',
+                        "EndDate": null,
+                        "Strength": 10
+                    },
+                    {
+                        "Title": "Javascript",
+                        "Description": "",
+                        "StartDate": '01/01/2005',
+                        "EndDate": null,
+                        "Strength": 8
+                    },
+                    {
+                        "Title": "KnockoutJS",
+                        "Description": "",
+                        "StartDate": '01/01/2013',
+                        "EndDate": null,
+                        "Strength": 9
+                    },
+                    {
+                        "Title": "IIS",
+                        "Description": "(v 6.0, 7.0)",
+                        "StartDate": '08/01/2004',
+                        "EndDate": null,
+                        "Strength": 8
+                    },
+                     {
+                         "Title": "Microsoft Access 98 - 2007",
+                         "Description": "",
+                         "StartDate": '08/01/2005',
+                         "EndDate": '08/01/2010',
+                         "Strength": 9
+                     },
+                     {
+                         "Title": "Microsoft Web API",
+                         "Description": "",
+                         "StartDate": '04/01/2012',
+                         "EndDate": null,
+                         "Strength": 8
+                     },
+                     {
+                         "Title": "Silverlight",
+                         "Description": "",
+                         "StartDate": '07/28/2012',
+                         "EndDate": '03/01/2013',
+                         "Strength": 5
+                     },
+                    {
+                        "Title": "SQL Server",
+                        "Description": "(v2000, 2005, 2008, 2008R2, 2012)",
+                        "StartDate": '08/01/2005',
+                        "EndDate": null,
+                        "Strength": 7
+                    },
+                    {
+                        "Title": "Transact SQL",
+                        "Description": "SQL Stored Procedures, Views, Functions, Triggers, T-SQL/Transact SQL",
+                        "StartDate": '08/01/2005',
+                        "EndDate": null,
+                        "Strength": 9
+                    },
+                    {
+                        "Title": "VB",
+                        "Description": "(Visual Basic)",
+                        "StartDate": '08/01/2004',
+                        "EndDate": null,
+                        "Strength": 7
+                    },
+                     {
+                         "Title": "WCF Data Services",
+                         "Description": "",
+                         "StartDate": '11/01/2011',
+                         "EndDate": '03/01/2013',
+                         "Strength": 7
+                     },
+                    {
+                        "Title": "WPF",
+                        "Description": "",
+                        "StartDate": '07/28/2012',
+                        "EndDate": '03/01/2013',
+                        "Strength": 4
+                    },
+                     {
+                         "Title": "Windows 8 Applications",
+                         "Description": "(XAML and JS Development)",
+                         "StartDate": '01/01/2013',
+                         "EndDate": '11/01/2013',
+                         "Strength": 5
+                     },
+                     {
+                         "Title": "XML",
+                         "Description": "",
+                         "StartDate": '02/01/2008',
+                         "EndDate": null,
+                         "Strength": 8
+                     }
+                ]
+            };
+
+            var jobs = {
+                "job": [
+                    {
+                        "Company": "Creative Street Media Group",
+                        "StartDate": "07/15/2011",
+                        "EndDate": "",
+                        "JobTitle": "Senior Application Developer",
+                        "description": [
+                            {
+                                "Description": "Improve and Maintain current Websites using Visual Studio 2013 (ASP.NET, MVC 4.5, C#, VB.NET, JQuery, AJAX), and SQL 2012."
+                            },
+                            {
+                                "Description": "Develop new Web Applications to accommodate varied requests."
+                            },
+                            {
+                                "Description": "Analyze existing applications to ensure top performance."
+                            },
+                            {
+                                "Description": "Examples include: <a target='_blank' href='http://www.theindianatreeproject.org'>http://www.theindianatreeproject.org</a> , <a target='_blank' href='http://www.lifeofanathlete.com'>http://www.lifeofanathlete.com</a> , <a target='_blank' href='http://www.okloa.org'>http://www.okloa.org</a>, <a target='_blank' href='http://asaaeligibility.com'>http://asaaeligibility.com</a>, <a target='_blank' href='http://www.nfhslearn.com'>http://www.nfhslearn.com</a>, <a target='_blank' href='http://indianapolisairport.com'>http://indianapolisairport.com</a>, <a target='_blank' href='http://www.yourteencourt.org'>http://www.yourteencourt.org</a>"
+                            }
+                        ]
+                    },
+                    {
+                        "Company": "Stericycle",
+                        "StartDate": "08/28/2012",
+                        "EndDate": "06/01/2013",
+                        "JobTitle": "Application Developer",
+                        "description": [
+                            {
+                                "Description": "Process Improvement for internal multi-tier Web and Desktop Applications"
+                            },
+                            {
+                                "Description": "Utilize Silverlight, WCF Data Services, MVVM, C#, .Net 4.0, .Net 4.5"
+                            },
+                            {
+                                "Description": "Part of Agile environment team devoted to improving process flow and decreasing processing time"
+                            }
+                        ]
+                    }
+                    ,
+                    {
+                        "Company": "SRI Incorporated",
+                        "StartDate": "02/15/2008",
+                        "EndDate": "07/01/2011",
+                        "JobTitle": "Application Developer",
+                        "description": [
+                            {
+                                "Description": "Review current processes and determine how to improve and cut processing time."
+                            },
+                            {
+                                "Description": "Websites include: <a href='http://www.sri-taxsale.com' target='_blank'>http://www.sri-taxsale.com</a>, <a href='http://www.sri-auctionsonline.com' target='_blank'>http://www.sri-auctionsonline.com</a>, <a href='http://www.sri-sheriffsale.com' target='_blank'>http://www.sri-sheriffsale.com</a>, <a href='http://www.sri-surplusauctions.com' target='_blank'>http://www.sri-surplusauctions.com</a>, <a href='http://www.assetauctionsonline.com' target='_blank'>http://www.assetauctionsonline.com</a>, <a href='http://www.indiana-homestead.com' target='_blank'>http://www.indiana-homestead.com</a>."
+                            },
+                            {
+                                "Description": "Improve and Maintain existing Microsoft Access Database Applications utilizing VBA and Macros."
+                            }
+                            ,
+                            {
+                                "Description": "Improve and Maintain current Websites using Visual Studio 2010 (ASP.NET, VB.NET, C#, JQuery, AJAX), and SQL 2005."
+                            },
+                            {
+                                "Description": "Develop new Web and Desktop Applications to accommodate varied requests."
+                            }
+                            ,
+                            {
+                                "Description": "Assisted county government with web and database driven system to process Homestead Verification forms."
+                            }
+                        ]
+                    }
+                    ,
+                    {
+                        "Company": "Unison Engine Components",
+                        "StartDate": "04/01/2005",
+                        "EndDate": "02/01/2008",
+                        "JobTitle": "Networking Specialist",
+                        "description": [
+                            {
+                                "Description": "First level of IT Support for UEC-TH."
+                            },
+                            {
+                                "Description": "Operate Active Directory and distribute permissions."
+                            },
+                            {
+                                "Description": "Install operating systems, various software and hardware."
+                            },
+                            {
+                                "Description": "Converted Lotus Servers to SQL Server utilizing Microsoft Access."
+                            },
+                            {
+                                "Description": "Sole Design and Maintenance of 45 SQL/Access databases."
+                            },
+                            {
+                                "Description": "Created multiple databases to simplify processes, eliminate paper, and track more efficiently using Access/VB, and SQL Server 2000."
+                            },
+                            {
+                                "Description": "In charge of intranet webpage, all designs and modifications."
+                            },
+                             {
+                                 "Description": "Used Microsoft Frontpage, Macromedia Fireworks, Dreamweaver and Crystal Excelsius 4.5 to maintain website."
+                             },
+                             {
+                                 "Description": "Implementation, Design, and Maintenance of 2003 Sharepoint web server."
+                             }
+                        ]
+                    }
+                ]
+            };
+
+            var timeInUse = function (start, end) {
+                var startDate = new Date(start);
+                var endDate = new Date();
+
+                if (end != null) {
+                    endDate = new Date(end);
+                }
+
+                var totalMonths = (endDate.getFullYear() - startDate.getFullYear()) * 12 + (endDate.getMonth() - startDate.getMonth());
+                var totalYears = (endDate.getFullYear() - startDate.getFullYear());
+
+                if (totalMonths < 12)
+                    return totalMonths + ' Month' + (totalMonths > 1 ? 's' : '');
+
+                return totalYears + ' Year' + (totalYears > 1 ? 's' : '');
+            }
+
             $('#currentYear').text(new Date().getFullYear());
             $.each(testimonials.testimonial, function (index, item) {
                 var container = $('<li />').addClass('list-group-item');
@@ -233,6 +546,49 @@
                 $('<td />').text(item.Title).appendTo(row);
                 $('<td />').text(new Date(item.DateCertified).toDateString()).appendTo(row);
                 row.appendTo('#certifications');
+            });
+
+            $.each(skills.skill, function (index, item) {
+                var row = $('<tr />');
+                $('<td />').html(item.Title + (item.Description != '' ? '<br /><i>' + item.Description + '</i>' : '')).appendTo(row);
+                $('<td />').text(timeInUse(item.StartDate, item.EndDate)).appendTo(row);
+                var progressTD = $('<td />');
+                var progress = $('<div />').attr('title', item.Strength + ' / 10').addClass('progress-bar').css('width', parseInt(item.Strength) * 10 + '%');
+                var progressParent = $('<div />').addClass('progress');
+                $(progress).appendTo(progressParent);
+                $(progressParent).appendTo(progressTD);
+                $(progressTD).appendTo(row);
+                row.appendTo('#skills');
+            });
+
+            $.each(jobs.job, function (index, item) {
+                var row = $('<tr />').css('cursor', 'pointer')
+                    .click(function (e) {
+                        e.preventDefault();
+                        var msg = '<ul class="list-group">';
+                        for (var i = 0; i < item.description.length; i++) {
+                            var desc = item.description[i].Description;
+                            msg += '<li class="list-group-item">';
+                            msg += desc;
+                            msg += '</li>';
+                        }
+                        msg += '</ul>';
+                        bootbox.dialog({
+                            message: msg,
+                            title: item.Company,
+                            buttons: {
+                                main: {
+                                    label: "OK",
+                                    className: "btn-primary"
+                                }
+                            }
+                        });
+                    });
+                $('<td />').text(item.Company).appendTo(row);
+                $('<td />').text(item.JobTitle).appendTo(row);
+                $('<td />').text(new Date(item.StartDate).toDateString()).appendTo(row);
+                $('<td />').text(item.EndDate == '' ? 'Current' : new Date(item.EndDate).toDateString()).appendTo(row);
+                row.appendTo('#jobs');
             });
         });
     </script>
