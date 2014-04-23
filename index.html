@@ -15,6 +15,7 @@
     <meta name="description" content="" />
     <link rel="shortcut icon" href="/Images/JGB.ico" />
     <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/toastr.min.css" rel="stylesheet" />
     <link href="/Content/Site.css" rel="stylesheet" />
 </head>
 <body>
@@ -115,6 +116,22 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-md-10 table-responsive">
+                <h2>
+                    Certifications
+                </h2>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Date Certified</th>
+                        </tr>
+                    </thead>
+                    <tbody id="certifications"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-10">
                 <h2>Testimonials</h2>
                 <ul id="testimonials" class="list-group"></ul>
@@ -127,42 +144,75 @@
     </div>
     <script src="/Scripts/jquery-2.0.3.min.js"></script>
     <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/toastr.min.js"></script>
     <script type="text/javascript">
         $(function () {
+            var toastrOptions = {
+                "debug": false,
+                "timeOut": 3000,
+                "positionClass": "toast-top-full-width"
+            };
+
             var testimonials = {
                 "testimonial": [
-            {
-                "Notes": "Having a keen ability to know what makes sense in a person's profession while being efficient and proficient are not the kinds of things that are very common, but these are characteristics with which I would use to describe Josh. When he was hired at our company, he promised that we would not be disappointed... he keeps his promises. We were all glad for the development expertise that Josh brought to the team and I'd be grateful to work with him again some day.",
-                "Name": "Brian Fedor",
-                "Link": "http://www.linkedin.com/profile/view?id=10206336"
-            },
-             {
-                 "Notes": "Working with Josh was the best part of working at Webize. Not only is Josh a great developer, but his enthusiasm about the .NET Framework was something that I haven't seen in a long time. Every Monday morning I could count on Josh to teach me something new that he had discovered (over the weekend) in the latest version of Visual Studio or the .NET Framework. I have no doubt that Josh will be a successful developer.",
-                 "Name": "Jim Smotherman",
-                 "Link": "http://www.linkedin.com/profile/view?id=21748707"
-             },
-             {
-                 "Notes": "I gave a really short deadline and he exceeded my expectations. Good, fast, and complete work.",
-                 "Name": "CJBrownname",
-                 "Link": "http://www.elance.com/e/cjbrownname"
-             },
-             {
-                 "Notes": "I was more than happy with provider. The project was not as easy as I had originally thought and jblackstone went out of his way to accommodate all the parameters of the project. He was prompt with his communication, understanding at my technological challenges and over delivered on all promises. Cannot thank you enough. Would recommend to anyone and I will definately use again if I ever need another Access Database developed. Thanks again.",
-                 "Name": "SallyDSE",
-                 "Link": "http://www.elance.com/e/sallydse"
-             },
-              {
-                  "Notes": "Fast Response to my questions and changes I requested. Diligent and quick. Would use again.",
-                  "Name": "DocRich",
-                  "Link": "http://www.elance.com/e/docrich"
-              },
-               {
-                   "Notes": "EXCELLENT - HIGHLY RECOMMENDED. The bottom line: My client and I hired him again, immediately, and will probably continue to work with him until we can no longer afford him! ... is simply a rare find. He is intelligent, a hard worker, diligent, responsible, and has an outstanding attitude and work ethic. His prices are outstanding... That said, his work - overall - surpassed the work completed by a company with more experience and greater resources. Our project - which might appear to be simple - was assigned to two companies simultaneously... It took a company with multiple programmers, and ~10 years experience, 80+ hours to get to the testing phase...jblackstone never said how many hours he spent on it --- but he turned it in ahead of the company with more experience and resources ... and never complained. I recommended that my client continue to hire jblackstone --- and, after we all had a phone meeting, in which the application was thoroughly discussed, jblackstone had made my client happy, and made me look good in the process. My client wrote, &quot;Thank you both so much for your efforts. I am so grateful !! Later (about a venues table change) my client wrote jblackstone, &quot;...That is so beyond belief, that you made this 3 week long job happen in a matter of minutes. Thanks sooooooooooooo much for doing that !!!!! I also love how you communicate so well exactly what you did and what the two files are. Some people are very intelligent and very talented, but they do not break things down enough so they can be easily understood. You appear to have that talent...&quot;",
-                   "Name": "Developport",
-                   "Link": "http://www.elance.com/e/developport"
-               }
+                {
+                    "Notes": "Having a keen ability to know what makes sense in a person's profession while being efficient and proficient are not the kinds of things that are very common, but these are characteristics with which I would use to describe Josh. When he was hired at our company, he promised that we would not be disappointed... he keeps his promises. We were all glad for the development expertise that Josh brought to the team and I'd be grateful to work with him again some day.",
+                    "Name": "Brian Fedor",
+                    "Link": "http://www.linkedin.com/profile/view?id=10206336"
+                },
+                 {
+                     "Notes": "Working with Josh was the best part of working at Webize. Not only is Josh a great developer, but his enthusiasm about the .NET Framework was something that I haven't seen in a long time. Every Monday morning I could count on Josh to teach me something new that he had discovered (over the weekend) in the latest version of Visual Studio or the .NET Framework. I have no doubt that Josh will be a successful developer.",
+                     "Name": "Jim Smotherman",
+                     "Link": "http://www.linkedin.com/profile/view?id=21748707"
+                 },
+                 {
+                     "Notes": "I gave a really short deadline and he exceeded my expectations. Good, fast, and complete work.",
+                     "Name": "CJBrownname",
+                     "Link": "http://www.elance.com/e/cjbrownname"
+                 },
+                 {
+                     "Notes": "I was more than happy with provider. The project was not as easy as I had originally thought and jblackstone went out of his way to accommodate all the parameters of the project. He was prompt with his communication, understanding at my technological challenges and over delivered on all promises. Cannot thank you enough. Would recommend to anyone and I will definately use again if I ever need another Access Database developed. Thanks again.",
+                     "Name": "SallyDSE",
+                     "Link": "http://www.elance.com/e/sallydse"
+                 },
+                  {
+                      "Notes": "Fast Response to my questions and changes I requested. Diligent and quick. Would use again.",
+                      "Name": "DocRich",
+                      "Link": "http://www.elance.com/e/docrich"
+                  },
+                   {
+                       "Notes": "EXCELLENT - HIGHLY RECOMMENDED. The bottom line: My client and I hired him again, immediately, and will probably continue to work with him until we can no longer afford him! ... is simply a rare find. He is intelligent, a hard worker, diligent, responsible, and has an outstanding attitude and work ethic. His prices are outstanding... That said, his work - overall - surpassed the work completed by a company with more experience and greater resources. Our project - which might appear to be simple - was assigned to two companies simultaneously... It took a company with multiple programmers, and ~10 years experience, 80+ hours to get to the testing phase...jblackstone never said how many hours he spent on it --- but he turned it in ahead of the company with more experience and resources ... and never complained. I recommended that my client continue to hire jblackstone --- and, after we all had a phone meeting, in which the application was thoroughly discussed, jblackstone had made my client happy, and made me look good in the process. My client wrote, &quot;Thank you both so much for your efforts. I am so grateful !! Later (about a venues table change) my client wrote jblackstone, &quot;...That is so beyond belief, that you made this 3 week long job happen in a matter of minutes. Thanks sooooooooooooo much for doing that !!!!! I also love how you communicate so well exactly what you did and what the two files are. Some people are very intelligent and very talented, but they do not break things down enough so they can be easily understood. You appear to have that talent...&quot;",
+                       "Name": "Developport",
+                       "Link": "http://www.elance.com/e/developport"
+                   }
                 ]
             };
+
+            var certifications = {
+                "certification": [
+                    {
+                        "Title": "MCTS: Microsoft SQL Server 2008, Database Development",
+                        "Description": "Microsoft Certified Technology Specialist Certification in SQL 2008 Database Design, TS-433",
+                        "DateCertified": '06/10/2011'
+                    },
+                    {
+                        "Title": "2778: Writing Queries using Microsoft Sql Server 2008 Transact-SQL",
+                        "Description": "Microsoft Training Course 2778: Writing Queries using Microsoft Sql Server 2008 Transact-SQL",
+                        "DateCertified": '05/11/2011'
+                    },
+                     {
+                         "Title": "MOS: Microsoft Access 2003",
+                         "Description": "Microsoft Specialist Certification in Microsoft Access 2003",
+                         "DateCertified": '05/19/2008'
+                     },
+                     {
+                         "Title": "2072: Administering a MS SQL Server 2000 Database",
+                         "Description": "Microsoft Training Course 2072: Administering a Microsoft SQL Server 2000 Database",
+                         "DateCertified": '02/05/2007'
+                     }
+                ]
+            };
+
             $('#currentYear').text(new Date().getFullYear());
             $.each(testimonials.testimonial, function (index, item) {
                 var container = $('<li />').addClass('list-group-item');
@@ -172,6 +222,16 @@
                 link.appendTo(sub);
                 sub.appendTo(container);
                 container.appendTo('#testimonials');
+            });
+
+            $.each(certifications.certification, function (index, item) {
+                var row = $('<tr />').css('cursor', 'pointer').click(function (e) {
+                    e.preventDefault();
+                    toastr.info(item.Description, item.Title, toastrOptions);
+                });
+                $('<td />').text(item.Title).appendTo(row);
+                $('<td />').text(new Date(item.DateCertified).toDateString()).appendTo(row);
+                row.appendTo('#certifications');
             });
         });
     </script>
