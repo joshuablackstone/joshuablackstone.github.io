@@ -58,9 +58,9 @@
         </div>
         <div class="row" id="portfolio">
             <div class="col-md-10">
-                <h1>
+                <h2>
                     Portfolio
-                </h1>
+                </h2>
                 <a href="https://www.asaawecoach.ca/" target="_blank">
                     <img src="Images/portfolio/albertalearn.jpg" class="img-thumbnail" title="ASAA We Coach" />
                 </a><a href="http://asaaeligibility.org" target="_blank">
@@ -105,13 +105,19 @@
         </div>
         <div class="row">
             <div class="col-md-10">
-                <h1>
+                <h2>
                     Education
-                </h1>
+                </h2>
                 <p>
                     Bachelors of Science in Management Information Systems (May, 2006)<br />
                     Indiana State University, Terre Haute, IN 47809
                 </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10">
+                <h2>Testimonials</h2>
+                <ul id="testimonials" class="list-group"></ul>
             </div>
         </div>
         <hr />
@@ -123,7 +129,50 @@
     <script src="/Scripts/bootstrap.min.js"></script>
     <script type="text/javascript">
         $(function () {
+            var testimonials = {
+                "testimonial": [
+            {
+                "Notes": "Having a keen ability to know what makes sense in a person's profession while being efficient and proficient are not the kinds of things that are very common, but these are characteristics with which I would use to describe Josh. When he was hired at our company, he promised that we would not be disappointed... he keeps his promises. We were all glad for the development expertise that Josh brought to the team and I'd be grateful to work with him again some day.",
+                "Name": "Brian Fedor",
+                "Link": "http://www.linkedin.com/profile/view?id=10206336"
+            },
+             {
+                 "Notes": "Working with Josh was the best part of working at Webize. Not only is Josh a great developer, but his enthusiasm about the .NET Framework was something that I haven't seen in a long time. Every Monday morning I could count on Josh to teach me something new that he had discovered (over the weekend) in the latest version of Visual Studio or the .NET Framework. I have no doubt that Josh will be a successful developer.",
+                 "Name": "Jim Smotherman",
+                 "Link": "http://www.linkedin.com/profile/view?id=21748707"
+             },
+             {
+                 "Notes": "I gave a really short deadline and he exceeded my expectations. Good, fast, and complete work.",
+                 "Name": "CJBrownname",
+                 "Link": "http://www.elance.com/e/cjbrownname"
+             },
+             {
+                 "Notes": "I was more than happy with provider. The project was not as easy as I had originally thought and jblackstone went out of his way to accommodate all the parameters of the project. He was prompt with his communication, understanding at my technological challenges and over delivered on all promises. Cannot thank you enough. Would recommend to anyone and I will definately use again if I ever need another Access Database developed. Thanks again.",
+                 "Name": "SallyDSE",
+                 "Link": "http://www.elance.com/e/sallydse"
+             },
+              {
+                  "Notes": "Fast Response to my questions and changes I requested. Diligent and quick. Would use again.",
+                  "Name": "DocRich",
+                  "Link": "http://www.elance.com/e/docrich"
+              },
+               {
+                   "Notes": "EXCELLENT - HIGHLY RECOMMENDED. The bottom line: My client and I hired him again, immediately, and will probably continue to work with him until we can no longer afford him! ... is simply a rare find. He is intelligent, a hard worker, diligent, responsible, and has an outstanding attitude and work ethic. His prices are outstanding... That said, his work - overall - surpassed the work completed by a company with more experience and greater resources. Our project - which might appear to be simple - was assigned to two companies simultaneously... It took a company with multiple programmers, and ~10 years experience, 80+ hours to get to the testing phase...jblackstone never said how many hours he spent on it --- but he turned it in ahead of the company with more experience and resources ... and never complained. I recommended that my client continue to hire jblackstone --- and, after we all had a phone meeting, in which the application was thoroughly discussed, jblackstone had made my client happy, and made me look good in the process. My client wrote, &quot;Thank you both so much for your efforts. I am so grateful !! Later (about a venues table change) my client wrote jblackstone, &quot;...That is so beyond belief, that you made this 3 week long job happen in a matter of minutes. Thanks sooooooooooooo much for doing that !!!!! I also love how you communicate so well exactly what you did and what the two files are. Some people are very intelligent and very talented, but they do not break things down enough so they can be easily understood. You appear to have that talent...&quot;",
+                   "Name": "Developport",
+                   "Link": "http://www.elance.com/e/developport"
+               }
+                ]
+            };
             $('#currentYear').text(new Date().getFullYear());
+            $.each(testimonials.testimonial, function (index, item) {
+                var container = $('<li />').addClass('list-group-item');
+                var sub = $('<blockquote />');
+                var link = $('<a />').attr('href', item.Link).attr('target', '_blank').text(item.Name).wrap('<p></p>');
+                $('<p />').html(item.Notes).appendTo(sub);
+                link.appendTo(sub);
+                sub.appendTo(container);
+                container.appendTo('#testimonials');
+            });
         });
     </script>
 </body>
