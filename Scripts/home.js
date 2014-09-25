@@ -67,6 +67,13 @@
 
     var skills = {
         "skill": [
+            {
+                "Title": "Angular JS",
+                "Description": "",
+                "StartDate": '05/01/2014',
+                "EndDate": null,
+                "Strength": 7
+            },
              {
                  "Title": "AJAX",
                  "Description": "",
