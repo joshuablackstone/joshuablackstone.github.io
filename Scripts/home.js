@@ -6,17 +6,23 @@
     };
 
     var testimonials = {
-        "testimonial": [
+        "testimonial":
+            [
+                          {
+                              "Notes": "Josh is an extremely talented web developer. He is very proficient with ASP.net MVC, HTML, and JavaScript developer. He is also a very dedicated and helpful person. I really enjoyed working with him at Creative Sreet and I would highly recommend him to any company.",
+                              "Name": "Brett Davis",
+                              "Link": "https://www.linkedin.com/profile/view?id=12307629"
+                          },
+                                   {
+                                       "Notes": "Working with Josh was the best part of working at Webize. Not only is Josh a great developer, but his enthusiasm about the .NET Framework was something that I haven't seen in a long time. Every Monday morning I could count on Josh to teach me something new that he had discovered (over the weekend) in the latest version of Visual Studio or the .NET Framework. I have no doubt that Josh will be a successful developer.",
+                                       "Name": "Jim Smotherman",
+                                       "Link": "http://www.linkedin.com/profile/view?id=21748707"
+                                   },
         {
             "Notes": "Having a keen ability to know what makes sense in a person's profession while being efficient and proficient are not the kinds of things that are very common, but these are characteristics with which I would use to describe Josh. When he was hired at our company, he promised that we would not be disappointed... he keeps his promises. We were all glad for the development expertise that Josh brought to the team and I'd be grateful to work with him again some day.",
             "Name": "Brian Fedor",
             "Link": "http://www.linkedin.com/profile/view?id=10206336"
         },
-         {
-             "Notes": "Working with Josh was the best part of working at Webize. Not only is Josh a great developer, but his enthusiasm about the .NET Framework was something that I haven't seen in a long time. Every Monday morning I could count on Josh to teach me something new that he had discovered (over the weekend) in the latest version of Visual Studio or the .NET Framework. I have no doubt that Josh will be a successful developer.",
-             "Name": "Jim Smotherman",
-             "Link": "http://www.linkedin.com/profile/view?id=21748707"
-         },
          {
              "Notes": "I gave a really short deadline and he exceeded my expectations. Good, fast, and complete work.",
              "Name": "CJBrownname",
