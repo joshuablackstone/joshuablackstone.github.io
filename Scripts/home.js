@@ -178,7 +178,6 @@
                  "EndDate": null,
                  "Strength": 5
              },
-             }
              {
                  "Title": "Silverlight",
                  "Description": "",
