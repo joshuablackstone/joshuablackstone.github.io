@@ -172,6 +172,14 @@
                  "Strength": 8
              },
              {
+                  "Title": "Ninject",
+                 "Description": "Dependency Library for use in ASP.NET MVC Projects",
+                 "StartDate": '08/01/2014',
+                 "EndDate": null,
+                 "Strength": 5
+             },
+             }
+             {
                  "Title": "Silverlight",
                  "Description": "",
                  "StartDate": '07/28/2012',
