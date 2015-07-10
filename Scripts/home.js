@@ -78,7 +78,7 @@
                 "Description": "",
                 "StartDate": '05/01/2014',
                 "EndDate": null,
-                "Strength": 7
+                "Strength": 8
             },
              {
                  "Title": "AJAX",
@@ -190,7 +190,7 @@
                 "Description": "(v2000, 2005, 2008, 2008R2, 2012)",
                 "StartDate": '08/01/2005',
                 "EndDate": null,
-                "Strength": 7
+                "Strength": 8
             },
             {
                 "Title": "Transact SQL",
@@ -211,7 +211,7 @@
                  "Description": "",
                  "StartDate": '11/01/2011',
                  "EndDate": '03/01/2013',
-                 "Strength": 7
+                 "Strength": 6
              },
             {
                 "Title": "WPF",
@@ -240,9 +240,29 @@
     var jobs = {
         "job": [
             {
+                "Company": "Indiana University - HELPNet Tech Services",
+                "StartDate": "04/01/2015",
+                "EndDate": "",
+                "JobTitle": "ASP.NET/SQL Developer",
+                "description": [
+                    {
+                        "Description": "Create and Maintain Web Applications using Visual Studio 2013 (ASP.NET, MVC 4.5.1, C#, JQuery, AJAX, KnockoutJS, AngularJS), and SQL Server 2012."
+                    },
+                    {
+                        "Description": "Create process improvements to simplify site development for team."
+                    },
+                    {
+                        "Description": "Mentor younger developers."
+                    },
+                    {
+                        "Description": "Participate in requirements gathering and time estimate meetings"
+                    }
+                ]
+            },
+            {
                 "Company": "Creative Street Media Group",
                 "StartDate": "07/15/2011",
-                "EndDate": "",
+                "EndDate": "03/15/2015",
                 "JobTitle": "Senior Application Developer",
                 "description": [
                     {
