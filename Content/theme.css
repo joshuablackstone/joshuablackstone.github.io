@@ -53,3 +53,120 @@
     background-color: #fff;
 }
 
+/*.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: #00a8ff;
+   color: #fff;
+}*/
+ 
+.btn-primary {
+    background: #00a8ff;
+    border-color: #00a8ff;
+    color: #fff;
+}
+
+.btn-default {
+    color: #00a8ff;
+    border-color: #00a8ff;
+    background: #fff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary, .btn-primary:active, .btn-primary.active
+ {
+    color: #00a8ff;
+    background: #fff;
+    border-color: #00a8ff;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+ background: #00a8ff;
+ border-color: #00a8ff;
+    color: #fff;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+ color:  #00a8ff;
+ border-color:  #00a8ff;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #00a8ff;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    background-color: #00a8ff;
+    color: #fff;
+  border-color: #00a8ff;
+}
+
+.pager li > a,
+.pager li > span {
+  color: #00a8ff;
+}
+.pager li > a:hover,
+.pager li > a:focus {
+  background-color: #00a8ff;
+  color: #fff;
+}
+
+a.list-group-item > .list-group-item-heading {
+  color: #00a8ff;
+  background-color: #fff;
+}
+
+a.list-group-item > .list-group-item-text{
+    background-color: #fff;
+}
+
+a.list-group-item.active {
+  background-color: #00a8ff;
+  border-color: #00a8ff;
+  color: #fff;
+}
+
+a.list-group-item.active:hover,
+a.list-group-item.active:focus{
+    background-color: #fff;
+    color: #00a8ff;
+    border-color: #00a8ff;
+}
+
+a.list-group-item:hover,
+a.list-group-item:focus
+ {
+    background-color: #fff;
+}
+
+.badge{
+    background-color: #00a8ff;
+  color: #fff;
+}
+
+.panel-primary {
+  border-color: #00a8ff;
+}
+.panel-primary > .panel-heading {
+  color: #fff;
+  background-color: #00a8ff;
+  border-color: #00a8ff;
+}
+.panel-primary > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #00a8ff;
+}
+.panel-primary > .panel-heading .badge {
+  color: #00a8ff;
+  background-color: #fff;
+}
+.panel-primary > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #00a8ff;
+}
