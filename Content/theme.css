@@ -60,7 +60,7 @@
  
 .btn-primary {
     background: #00a8ff;
-    border-style: none;
+     border-color: #00a8ff;
     color: #fff;
     text-decoration: none;
 }
@@ -69,6 +69,7 @@
     color: #00a8ff;
     border-color: #00a8ff;
     background: #fff;
+    text-decoration: none;
 }
  
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary, .btn-primary:active, .btn-primary.active
