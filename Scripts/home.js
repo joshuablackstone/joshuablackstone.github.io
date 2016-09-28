@@ -72,170 +72,191 @@
     };
 
     var skills = {
-        "skill": [
-            {
-                "Title": "Angular JS",
-                "Description": "",
-                "StartDate": '05/01/2014',
-                "EndDate": null,
-                "Strength": 8
-            },
-             {
-                 "Title": "AJAX",
-                 "Description": "",
-                 "StartDate": '01/01/2009',
-                 "EndDate": null,
-                 "Strength": 9
-             },
-            {
-                "Title": "ASP.NET MVC",
-                "Description": "(v2, 3, 4, 4.5, 4.5.1)",
-                "StartDate": '11/01/2011',
-                "EndDate": null,
-                "Strength": 8
-            },
-            {
-                "Title": "ASP.NET WebForms",
-                "Description": "(v2, 3, 3.5, 4, 4.5, 4.5.1)",
-                "StartDate": '12/01/2008',
-                "EndDate": null,
-                "Strength": 8
-            },
-            {
-                "Title": "Bootstrap",
-                "Description": "(v2, 3)",
-                "StartDate": '10/01/2013',
-                "EndDate": null,
-                "Strength": 8
-            },
-            {
-                "Title": "C#",
-                "Description": "(C Sharp)",
-                "StartDate": '01/01/2009',
-                "EndDate": null,
-                "Strength": 7
-            },
-            {
-                "Title": "Classic ASP",
-                "Description": "",
-                "StartDate": '02/01/2008',
-                "EndDate": '09/01/2008',
-                "Strength": 6
-            },
-            {
-                "Title": "CSS",
-                "Description": "",
-                "StartDate": '01/01/2003',
-                "EndDate": null,
-                "Strength": 9
-            },
-            {
-                "Title": "JQuery",
-                "Description": "",
-                "StartDate": '08/01/2009',
-                "EndDate": null,
-                "Strength": 10
-            },
-            {
-                "Title": "Javascript",
-                "Description": "",
-                "StartDate": '01/01/2005',
-                "EndDate": null,
-                "Strength": 8
-            },
-            {
-                "Title": "KnockoutJS",
-                "Description": "",
-                "StartDate": '01/01/2013',
-                "EndDate": null,
-                "Strength": 9
-            },
-            {
-                "Title": "IIS",
-                "Description": "(v 6.0, 7.0)",
-                "StartDate": '08/01/2004',
-                "EndDate": null,
-                "Strength": 8
-            },
-             {
-                 "Title": "Microsoft Access 98 - 2007",
-                 "Description": "",
-                 "StartDate": '08/01/2005',
-                 "EndDate": '08/01/2010',
-                 "Strength": 9
-             },
-             {
-                 "Title": "Microsoft Web API",
-                 "Description": "",
-                 "StartDate": '04/01/2012',
-                 "EndDate": null,
-                 "Strength": 8
-             },
-             {
-                  "Title": "Ninject",
-                 "Description": "Dependency Library for use in ASP.NET MVC Projects",
-                 "StartDate": '08/01/2014',
-                 "EndDate": null,
-                 "Strength": 5
-             },
-             {
-                 "Title": "Silverlight",
-                 "Description": "",
-                 "StartDate": '07/28/2012',
-                 "EndDate": '03/01/2013',
-                 "Strength": 5
-             },
-            {
-                "Title": "SQL Server",
-                "Description": "(v2000, 2005, 2008, 2008R2, 2012)",
-                "StartDate": '08/01/2005',
-                "EndDate": null,
-                "Strength": 8
-            },
-            {
-                "Title": "Transact SQL",
-                "Description": "SQL Stored Procedures, Views, Functions, Triggers, T-SQL/Transact SQL",
-                "StartDate": '08/01/2005',
-                "EndDate": null,
-                "Strength": 9
-            },
-            {
-                "Title": "VB",
-                "Description": "(Visual Basic)",
-                "StartDate": '08/01/2004',
-                "EndDate": null,
-                "Strength": 7
-            },
-             {
-                 "Title": "WCF Data Services",
-                 "Description": "",
-                 "StartDate": '11/01/2011',
-                 "EndDate": '03/01/2013',
-                 "Strength": 6
-             },
-            {
-                "Title": "WPF",
-                "Description": "",
-                "StartDate": '07/28/2012',
-                "EndDate": '03/01/2013',
-                "Strength": 4
-            },
-             {
-                 "Title": "Windows 8 Applications",
-                 "Description": "(XAML and JS Development)",
-                 "StartDate": '01/01/2013',
-                 "EndDate": '11/01/2013',
-                 "Strength": 5
-             },
-             {
-                 "Title": "XML",
-                 "Description": "",
-                 "StartDate": '02/01/2008',
-                 "EndDate": null,
-                 "Strength": 8
-             }
-        ]
-    };
+  "skill": [
+    {
+      "Title": "AngularJS v1",
+      "Description": "",
+      "StartDate": "05/01/2014",
+      "EndDate": null,
+      "Strength": 9
+    },
+    {
+      "Title": "AngularJS v2",
+      "Description": "",
+      "StartDate": "04/01/2016",
+      "EndDate": null,
+      "Strength": 5
+    },
+    {
+      "Title": "Typescript",
+      "Description": "",
+      "StartDate": "01/01/2016",
+      "EndDate": null,
+      "Strength": 6
+    },
+    {
+      "Title": "Node JS",
+      "Description": "",
+      "StartDate": "04/01/2016",
+      "EndDate": null,
+      "Strength": 4
+    },
+    {
+      "Title": "AJAX",
+      "Description": "",
+      "StartDate": "01/01/2009",
+      "EndDate": null,
+      "Strength": 9
+    },
+    {
+      "Title": "ASP.NET MVC",
+      "Description": "(v2, 3, 4, 4.5, 4.5.1)",
+      "StartDate": "11/01/2011",
+      "EndDate": null,
+      "Strength": 8
+    },
+    {
+      "Title": "ASP.NET WebForms",
+      "Description": "(v2, 3, 3.5, 4, 4.5, 4.5.1)",
+      "StartDate": "12/01/2008",
+      "EndDate": null,
+      "Strength": 8
+    },
+    {
+      "Title": "Bootstrap",
+      "Description": "(v2, 3)",
+      "StartDate": "10/01/2013",
+      "EndDate": null,
+      "Strength": 8
+    },
+    {
+      "Title": "C#",
+      "Description": "(C Sharp)",
+      "StartDate": "01/01/2009",
+      "EndDate": null,
+      "Strength": 7
+    },
+    {
+      "Title": "Classic ASP",
+      "Description": "",
+      "StartDate": "02/01/2008",
+      "EndDate": "09/01/2008",
+      "Strength": 6
+    },
+    {
+      "Title": "CSS",
+      "Description": "",
+      "StartDate": "01/01/2003",
+      "EndDate": null,
+      "Strength": 9
+    },
+    {
+      "Title": "JQuery",
+      "Description": "",
+      "StartDate": "08/01/2009",
+      "EndDate": null,
+      "Strength": 10
+    },
+    {
+      "Title": "Javascript",
+      "Description": "",
+      "StartDate": "01/01/2005",
+      "EndDate": null,
+      "Strength": 8
+    },
+    {
+      "Title": "KnockoutJS",
+      "Description": "",
+      "StartDate": "01/01/2013",
+      "EndDate": null,
+      "Strength": 9
+    },
+    {
+      "Title": "IIS",
+      "Description": "(v 6.0, 7.0)",
+      "StartDate": "08/01/2004",
+      "EndDate": null,
+      "Strength": 8
+    },
+    {
+      "Title": "Microsoft Access 98 - 2007",
+      "Description": "",
+      "StartDate": "08/01/2005",
+      "EndDate": "08/01/2010",
+      "Strength": 9
+    },
+    {
+      "Title": "Microsoft Web API",
+      "Description": "",
+      "StartDate": "04/01/2012",
+      "EndDate": null,
+      "Strength": 8
+    },
+    {
+      "Title": "Ninject",
+      "Description": "Dependency Library for use in ASP.NET MVC Projects",
+      "StartDate": "08/01/2014",
+      "EndDate": null,
+      "Strength": 5
+    },
+    {
+      "Title": "Silverlight",
+      "Description": "",
+      "StartDate": "07/28/2012",
+      "EndDate": "03/01/2013",
+      "Strength": 5
+    },
+    {
+      "Title": "SQL Server",
+      "Description": "(v2000, 2005, 2008, 2008R2, 2012)",
+      "StartDate": "08/01/2005",
+      "EndDate": null,
+      "Strength": 8
+    },
+    {
+      "Title": "Transact SQL",
+      "Description": "SQL Stored Procedures, Views, Functions, Triggers, T-SQL/Transact SQL",
+      "StartDate": "08/01/2005",
+      "EndDate": null,
+      "Strength": 9
+    },
+    {
+      "Title": "VB",
+      "Description": "(Visual Basic)",
+      "StartDate": "08/01/2004",
+      "EndDate": null,
+      "Strength": 7
+    },
+    {
+      "Title": "WCF Data Services",
+      "Description": "",
+      "StartDate": "11/01/2011",
+      "EndDate": "03/01/2013",
+      "Strength": 6
+    },
+    {
+      "Title": "WPF",
+      "Description": "",
+      "StartDate": "07/28/2012",
+      "EndDate": "03/01/2013",
+      "Strength": 4
+    },
+    {
+      "Title": "Windows 8 Applications",
+      "Description": "(XAML and JS Development)",
+      "StartDate": "01/01/2013",
+      "EndDate": "11/01/2013",
+      "Strength": 5
+    },
+    {
+      "Title": "XML",
+      "Description": "",
+      "StartDate": "02/01/2008",
+      "EndDate": null,
+      "Strength": 8
+    }
+  ]
+};
 
     var jobs = {
         "job": [
