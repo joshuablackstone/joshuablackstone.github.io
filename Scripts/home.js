@@ -259,27 +259,41 @@
 };
 
     var jobs = {
-        "job": [
-            {
-                "Company": "Indiana University - HELPNet Tech Services",
-                "StartDate": "04/01/2015",
-                "EndDate": "",
-                "JobTitle": "ASP.NET/SQL Developer",
-                "description": [
-                    {
-                        "Description": "Create and Maintain Web Applications using Visual Studio 2013 (ASP.NET, MVC 4.5.1, C#, JQuery, AJAX, KnockoutJS, AngularJS), and SQL Server 2012."
-                    },
-                    {
-                        "Description": "Create process improvements to simplify site development for team."
-                    },
-                    {
-                        "Description": "Mentor younger developers."
-                    },
-                    {
-                        "Description": "Participate in requirements gathering and time estimate meetings"
-                    }
-                ]
-            },
+          "job": [
+    {
+      "Company": "International Medical Group",
+      "StartDate": "02/15/2016",
+      "EndDate": "",
+      "JobTitle": "Senior Application Developer",
+      "description": [
+        {
+          "Description": "Create and Maintain Web Applications using Visual Studio 2012 and 2015 (ASP.NET, MVC 4.5.1, C#, Entity Framework, JQuery, AngularJS 1, 2 and SQL Server 2012)."
+        },
+        {
+          "Description": "Assist/Mentor junior developers with various programming tasks."
+        }
+      ]
+    },
+    {
+      "Company": "Indiana University - HELPNet Tech Services",
+      "StartDate": "04/01/2015",
+      "EndDate": "12/01/2015",
+      "JobTitle": "ASP.NET/SQL Developer",
+      "description": [
+        {
+          "Description": "Create and Maintain Web Applications using Visual Studio 2013 (ASP.NET, MVC 4.5.1, C#, JQuery, AJAX, KnockoutJS, AngularJS), and SQL Server 2012."
+        },
+        {
+          "Description": "Create process improvements to simplify site development for team."
+        },
+        {
+          "Description": "Mentor younger developers."
+        },
+        {
+          "Description": "Participate in requirements gathering and time estimate meetings"
+        }
+      ]
+    },
             {
                 "Company": "Creative Street Media Group",
                 "StartDate": "07/15/2011",
