@@ -13,10 +13,10 @@
     <meta property="og:description" content="" />
     <meta name="keywords" content="ASP.NET,JQuery,C#,VB,Javascript,SQL,Webservices" />
     <meta name="description" content="" />
-    <link rel="shortcut icon" href="/Images/JGB.ico" />
-    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="/Content/toastr.min.css" rel="stylesheet" />
-    <link href="/Content/Site.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="Images/JGB.ico" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/toastr.min.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
 </head>
 <body>
     <div class="navbar navbar-default navbar-fixed-top">
@@ -30,24 +30,7 @@
             </div>
             <div class="navbar-collapse collapse" id="navbar-main">
                 <ul id="menu" class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Social
-                            Media <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a target="_blank" href="http://jblackstone.blogspot.com">Blogger</a></li>
-                            <li><a target="_blank" href="http://www.flickr.com/photos/jblackstone">Flickr</a></li>
-                            <li><a target="_blank" href="https://hackhands.com/jblackstone">Hack Hands</a></li>
-                            <li><a target="_blank" href="http://www.linkedin.com/profile/view?id=65688934">LinkedIn</a></li>
-                            <li><a target="_blank" href="http://www.pluralsight.com/profile/joshua-blackstone">Pluralsight</a></li>
-                            <li><a target="_blank" href="http://www.facebook.com/#!/profile.php?id=1494471743">Facebook</a></li>
-                            <li><a target="_blank" href="http://twitter.com/#!/jblackstone6975">Twitter</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="/Documents/Resume.pdf" target="_blank"><span class="glyphicon glyphicon-download"></span>&nbsp;Resume</a>
-                    </li>
+                    <li><a target="_blank" href="http://www.linkedin.com/in/jblackstone"><img src="Images/LinkedIn-Logo-2C-21px-R.png" /></a></li>
                 </ul>
             </div>
         </div>
@@ -67,20 +50,29 @@
                 <h2>
                     Portfolio
                 </h2>
+                <a href="https://www.imglobal.com" target="_blank">
+                    <img src="Images/portfolio/Imglobal.PNG" title="International Medical Group" class="img-thumbnail" />
+                </a>
+                <a href="https://enroll.imglobal.com/" target="_blank">
+                    <img src="Images/portfolio/IMB.PNG" title="Enroll Pathways International Medical Group" class="img-thumbnail" />
+                </a>
+                <a href="https://peacecorps.imglobal.com" target="_blank">
+                    <img src="Images/portfolio/PeaceCorps.PNG" title="International Medical Group Peace Corps" class="img-thumbnail" />
+                </a>
                 <a href="https://www.asaawecoach.ca/" target="_blank">
                     <img src="Images/portfolio/albertalearn.jpg" class="img-thumbnail" title="ASAA We Coach" />
                 </a><a href="http://asaaeligibility.org" target="_blank">
                     <img src="Images/portfolio/asaaeligibility.jpg" class="img-thumbnail" title="ASAA Eligibility" />
                 </a><a href="http://indiana-homestead.com" target="_blank">
-                    <img src="Images/portfolio/indianaHomestead.jpg" class="img-thumbnail" title="Indiana-Homestead.Com" />
+                    <img src="Images/portfolio/indianaHomestead.jpg" class="img-thumbnail inactive" title="Indiana-Homestead.Com" />
                 </a><a href="http://yourteencourt.org" target="_blank">
                     <img src="Images/portfolio/yourteencourt.jpg" class="img-thumbnail" title="Your Teen Court" />
                 </a><a href="http://theindianatreeproject.org" target="_blank">
-                    <img src="Images/portfolio/indianatreeproject.jpg" class="img-thumbnail" title="The Indiana Tree Project" />
+                    <img src="Images/portfolio/indianatreeproject.jpg" class="img-thumbnail inactive" title="The Indiana Tree Project" />
                 </a><a href="http://indianapolisairport.com" target="_blank">
                     <img src="Images/portfolio/indyairport.jpg" class="img-thumbnail" title="Indianapolis Airport" />
                 </a><a href="http://motomullets.com" target="_blank">
-                    <img src="Images/portfolio/motomullets.jpg" class="img-thumbnail" title="MotoMullets - Safety First Tail Second" />
+                    <img src="Images/portfolio/motomullets.jpg" class="img-thumbnail inactive" title="MotoMullets - Safety First Tail Second" />
                 </a><a href="http://lifeofanathlete.com" target="_blank">
                     <img src="Images/portfolio/newmexico.jpg" class="img-thumbnail" title="Life Of An Athlete" />
                 </a><a href="http://nfhslearn.com" target="_blank">
@@ -105,7 +97,7 @@
                     <img src="Images/portfolio/iuhealth.jpg" title="Indiana University Health Employee Wellness" class="img-thumbnail" />
                 </a>
                 <a href="http://watchmyfight.com" target="_blank">
-                    <img src="Images/portfolio/watchmyfight.jpg" title="Watch My Fight.Com" class="img-thumbnail" />
+                    <img src="Images/portfolio/watchmyfight.jpg" title="Watch My Fight.Com" class="img-thumbnail inactive" />
                 </a>
             </div>
         </div>
@@ -182,8 +174,7 @@
             <div class="col-md-10">
                 <h2>Recent Blogs</h2>
                 <p id="loadingBlogs">-- Loading --</p>
-                <ul id="blogs" class="list-group" style="display: none;">
-                </ul>
+                <ul id="blogs" class="list-group" style="display: none;"></ul>
             </div>
         </div>
         <hr />
@@ -192,10 +183,10 @@
         </footer>
     </div>
 
-    <script src="/Scripts/jquery-2.0.3.min.js"></script>
-    <script src="/Scripts/bootstrap.min.js"></script>
-    <script src="/Scripts/bootbox.min.js"></script>
-    <script src="/Scripts/toastr.min.js"></script>
-    <script src="/Scripts/home.js"></script>
+    <script src="Scripts/jquery-2.0.3.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/bootbox.min.js"></script>
+    <script src="Scripts/toastr.min.js"></script>
+    <script src="Scripts/home.js"></script>
 </body>
 </html>

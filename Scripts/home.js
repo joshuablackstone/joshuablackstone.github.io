@@ -74,14 +74,14 @@
     var skills = {
   "skill": [
     {
-      "Title": "AngularJS v1",
+      "Title": "AngularJS",
       "Description": "",
       "StartDate": "05/01/2014",
       "EndDate": null,
       "Strength": 9
     },
     {
-      "Title": "AngularJS v2",
+      "Title": "Angular 2 - 5",
       "Description": "",
       "StartDate": "04/01/2016",
       "EndDate": null,
@@ -110,7 +110,7 @@
     },
     {
       "Title": "ASP.NET MVC",
-      "Description": "(v2, 3, 4, 4.5, 4.5.1)",
+      "Description": "(v2 - 5)",
       "StartDate": "11/01/2011",
       "EndDate": null,
       "Strength": 8
@@ -119,12 +119,12 @@
       "Title": "ASP.NET WebForms",
       "Description": "(v2, 3, 3.5, 4, 4.5, 4.5.1)",
       "StartDate": "12/01/2008",
-      "EndDate": null,
+      "EndDate": "12/01/2012",
       "Strength": 8
     },
     {
       "Title": "Bootstrap",
-      "Description": "(v2, 3)",
+      "Description": "(v2, 3, 4)",
       "StartDate": "10/01/2013",
       "EndDate": null,
       "Strength": 8

@@ -21,6 +21,11 @@
     margin: 5px;
 }
 
+    #portfolio .inactive {
+        filter: alpha(opacity=40);
+        opacity: 0.4;
+    }
+
 /*.date {
     background-color: #f8f8f8;
     display: block;
