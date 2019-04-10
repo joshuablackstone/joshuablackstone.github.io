@@ -81,25 +81,25 @@
       "Strength": 9
     },
     {
-      "Title": "Angular 2 - 6",
+      "Title": "Angular 2 - 7",
       "Description": "",
       "StartDate": "04/01/2016",
       "EndDate": null,
-      "Strength": 5
+      "Strength": 7
     },
     {
       "Title": "Typescript",
       "Description": "",
       "StartDate": "01/01/2016",
       "EndDate": null,
-      "Strength": 6
+      "Strength": 7
     },
     {
       "Title": "Node JS",
       "Description": "",
       "StartDate": "04/01/2016",
       "EndDate": null,
-      "Strength": 4
+      "Strength": 5
     },
     {
       "Title": "AJAX",
@@ -168,7 +168,7 @@
       "Title": "KnockoutJS",
       "Description": "",
       "StartDate": "01/01/2013",
-      "EndDate": null,
+      "EndDate": "01/01/2015",
       "Strength": 9
     },
     {
