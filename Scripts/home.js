@@ -81,11 +81,11 @@
       "Strength": 9
     },
     {
-      "Title": "Angular 2 - 7",
+      "Title": "Angular 12",
       "Description": "",
       "StartDate": "04/01/2016",
       "EndDate": null,
-      "Strength": 7
+      "Strength": 8
     },
     {
       "Title": "Typescript",
@@ -109,8 +109,8 @@
       "Strength": 9
     },
     {
-      "Title": "ASP.NET MVC",
-      "Description": "(v2 - 5)",
+      "Title": "ASP.NET Standard MVC/Razor",
+      "Description": "",
       "StartDate": "11/01/2011",
       "EndDate": null,
       "Strength": 8
@@ -121,6 +121,13 @@
       "StartDate": "12/01/2008",
       "EndDate": "12/01/2012",
       "Strength": 8
+    },
+    {
+      "Title": "ASP.NET Core",
+      "Description": "",
+      "StartDate": "12/01/2018",
+      "EndDate": null,
+      "Strength": 7
     },
     {
       "Title": "Bootstrap",
