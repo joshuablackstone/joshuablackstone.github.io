@@ -81,8 +81,8 @@
       "Strength": 9
     },
     {
-      "Title": "Angular 12",
-      "Description": "",
+      "Title": "Angular",
+      "Description": "(v2 - 12)",
       "StartDate": "04/01/2016",
       "EndDate": null,
       "Strength": 8
