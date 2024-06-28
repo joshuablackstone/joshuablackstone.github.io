@@ -547,7 +547,7 @@
         container.appendTo('#testimonials');
     });
 
-    $.getJSON('http://jblackstone.blogspot.com/feeds/posts/default?orderby=published&max-results=5&alt=json-in-script&callback=?', function (data) {
+    $.getJSON('https://jblackstone.blogspot.com/feeds/posts/default?orderby=published&max-results=5&alt=json-in-script&callback=?', function (data) {
         $.each(data.feed.entry, function (index, item) {
             var container = $('<li />').addClass('list-group-item');
             var sub = $('<div />').addClass('media');
